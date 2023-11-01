@@ -10,16 +10,16 @@ class EvexiCli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Evexi/evexi-cli/releases/download/0.0.2/evexi-cli_Darwin_arm64.tar.gz"
-      sha256 "341765c78173b005b3a56fc547fe387ea89cdcd439a1fb692e6fbfb5d2cfb849"
+      url "https://github.com/Evexi/evexi-cli/releases/download/v0.0.2/evexi-cli_Darwin_arm64.tar.gz"
+      sha256 "8e59319b0bbcb440fd4d8ddb9c254cdd077642ee6f7bc6dcc652fb5a0607270d"
 
       def install
         bin.install "evexi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Evexi/evexi-cli/releases/download/0.0.2/evexi-cli_Darwin_x86_64.tar.gz"
-      sha256 "ee6e295d10898a8284a73584f84cbdc1683a9db8503be0eeda48500e3c86e59c"
+      url "https://github.com/Evexi/evexi-cli/releases/download/v0.0.2/evexi-cli_Darwin_x86_64.tar.gz"
+      sha256 "25d666217cf2c7d1c0611d591f770f119ea57a75ea18d470d34b1f9990464016"
 
       def install
         bin.install "evexi"
@@ -29,16 +29,16 @@ class EvexiCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Evexi/evexi-cli/releases/download/0.0.2/evexi-cli_Linux_arm64.tar.gz"
-      sha256 "a8b740b30a5943390bf22b446e04765494295ca543dafb61896a6aa397ad481f"
+      url "https://github.com/Evexi/evexi-cli/releases/download/v0.0.2/evexi-cli_Linux_arm64.tar.gz"
+      sha256 "1d94eeb41c31eaaf58c0d100a70a71807d637205d8a04f5a1b842a4f42406707"
 
       def install
         bin.install "evexi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Evexi/evexi-cli/releases/download/0.0.2/evexi-cli_Linux_x86_64.tar.gz"
-      sha256 "c172c5405ab2d57e58955beb5358ff92e70bbe3aeb7db031721eb09bed22ca59"
+      url "https://github.com/Evexi/evexi-cli/releases/download/v0.0.2/evexi-cli_Linux_x86_64.tar.gz"
+      sha256 "727a2601e532d5d90a6b0b2c90570583de9959dc4ff3bdd56179bd31646b869a"
 
       def install
         bin.install "evexi"
